@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.peony.ccfinder.MainActivity$PlaceholderFragment" >
+
+    <!-- 검색어 입력창 부분 -->
+    <LinearLayout
+        android:id="@+id/main_llSearch"
+        android:layout_centerHorizontal="true" 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/main_btnCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:textSize="8sp"
+                android:text="기업명으로 검색"/>
+            
+            <Button
+                android:id="@+id/main_btnSafety"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:textSize="8sp"
+                android:text="제품안정정보 검색"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cc_color_bage">
+            
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+                android:src="@drawable/search_icon" />
+
+            <EditText 
+                android:id="@+id/main_etKeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <!-- 카테고리 부분 -->
+    <LinearLayout 
+        android:id="@+id/main_llCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_llSearch">
+        <!-- 카테고리 상단 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <!-- KS -->
+            <LinearLayout
+                android:id="@+id/main_llCategoryKs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/ks_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="KS 표시\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+	        
+            <!-- KAS -->
+            <LinearLayout
+                android:id="@+id/main_llCategoryKas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/category_padding"
+                android:layout_marginRight="@dimen/category_padding"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/kas_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="KAS\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+	        
+            <!-- KOLAS --> 
+            <LinearLayout
+                android:id="@+id/main_llCategoryKolas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/kolas_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="KOLAS\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+
+        </LinearLayout>
+        
+        
+        <!-- 카테고리 하단 -->
+        <LinearLayout
+            android:layout_marginTop="42dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- GR -->
+            <LinearLayout
+                android:id="@+id/main_llCategoryGr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/gr_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="GR\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+	        
+            <!-- NET -->
+            <LinearLayout
+                android:id="@+id/main_llCategoryNet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/category_padding"
+                android:layout_marginRight="@dimen/category_padding"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/net_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="NET\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+	        
+            <!-- NEP --> 
+            <LinearLayout
+                android:id="@+id/main_llCategoryNep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+	            <ImageView
+	                android:layout_width="@dimen/category_icon_size"
+	                android:layout_height="@dimen/category_icon_size"
+	                android:src="@drawable/nep_icon" />
+	            
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="NEP\n인증 정보"
+	                android:gravity="center"/>
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <!-- 공지 사항 -->
+    <LinearLayout 
+        android:id="@+id/main_llNoticeArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        
+        <!-- 공지 탭 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+            android:id="@+id/btnTabNotice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="NOTICE"/>
+        
+        <Button
+            android:id="@+id/btnTabGosi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="고시/공고"/>
+        </LinearLayout>
+            
+    </LinearLayout>
+
+</RelativeLayout>

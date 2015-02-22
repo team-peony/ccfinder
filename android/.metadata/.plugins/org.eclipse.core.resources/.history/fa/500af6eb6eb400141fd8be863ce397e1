@@ -1,0 +1,17 @@
+package com.peony.ccfinder;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
+import android.widget.TextView;
+
+@ContentView(R.layout.activity_flash)
+public class FlashActivity extends RoboActivity {
+	@InjectView(R.id.tvFlashText) TextView tvFlashText;
+	
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		tvFlashText.setText("플래시 화면이당!");
+	}
+}

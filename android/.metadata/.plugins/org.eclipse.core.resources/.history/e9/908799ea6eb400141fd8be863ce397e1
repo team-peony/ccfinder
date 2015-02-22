@@ -1,0 +1,11 @@
+package com.peony.ccfinder;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
+import android.widget.TextView;
+
+@ContentView(R.layout.activity_flash)
+public class FlashActivity extends RoboActivity {
+	@InjectView(R.id.tvFlashText) TextView tvFlashText;
+}

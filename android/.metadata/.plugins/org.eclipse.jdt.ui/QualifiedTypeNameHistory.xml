@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="roboguice.activity.RoboActivity"/>
+<fullyQualifiedTypeName name="roboguice.inject.ContentView"/>
+<fullyQualifiedTypeName name="roboguice.inject.InjectView"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="com.google.inject.Inject"/>
+<fullyQualifiedTypeName name="com.peony.ccfinder.FlashActivity"/>
+<fullyQualifiedTypeName name="org.androidannotations.annotations.EActivity"/>
+<fullyQualifiedTypeName name="com.peony.ccfinder.R.layout"/>
+<fullyQualifiedTypeName name="org.androidannotations.annotations.AfterViews"/>
+<fullyQualifiedTypeName name="org.androidannotations.annotations.EFragment"/>
+<fullyQualifiedTypeName name="android.app.Fragment"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="org.androidannotations.annotations.ViewById"/>
+<fullyQualifiedTypeName name="org.androidannotations.annotations.Click"/>
+<fullyQualifiedTypeName name="com.peony.ccfinder.R.id"/>
+<fullyQualifiedTypeName name="com.peony.ccfinder.MainFragment_"/>
+</qualifiedTypeNameHistroy>
